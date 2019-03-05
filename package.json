@@ -2,19 +2,27 @@
   "name": "iso-lang-js",
   "version": "1.0.0",
   "description": "Get language data for specific country",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xmd5a/iso-lang-js.git"
   },
-  "keywords": [],
+  "keywords": ["iso", "ISO country codes", "iso639", "iso-639", "iso-639-1", "iso-639-2", "iso639-1", "iso639-2",
+    "locale code", "locale", "language", "lang", "languages", "iso-lang", "countries", "country", "country name",
+    "lightweight"],
   "author": "xmd5a",
   "license": "ISC",
   "bugs": {
