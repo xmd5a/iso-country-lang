@@ -4,7 +4,8 @@
   "description": "Get language data for specific country",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/xmd5a/iso-lang-js/issues"
   },
-  "homepage": "https://github.com/xmd5a/iso-lang-js#readme"
+  "homepage": "https://github.com/xmd5a/iso-lang-js#readme",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
 }
