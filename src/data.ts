@@ -1,4 +1,6 @@
-export const data = [{ // @todo change this into proper interface
+import { ICountryLang } from './interfaces';
+
+export const data: ICountryLang[] = [{
   countryName: 'Italy',
   iso6391: 'it',
   iso6392: 'ita',
